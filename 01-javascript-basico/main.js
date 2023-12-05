@@ -295,3 +295,68 @@ do {
   k++
 } while (k < 10)
 
+// EJERCICIOS:
+
+// 12.    Un profesor tiene un salario inicial de $1500, y recibe un incremento de 10 % anual durante 6 años. ¿Cuál es su salario al cabo de 6 años? ¿Qué salario ha recibido en cada uno de los 6 años? Realice el algoritmo y representan la solución, utilizando el ciclo apropiado.
+
+const incremento = 0.10
+const incrementos = 6
+
+// let acumulador = (1500 + (1500 * 0.10))
+// console.log(acumulador)
+
+// acumulador = acumulador + (acumulador * 0.10)
+// console.log(acumulador)
+
+// acumulador = acumulador + (acumulador * 0.10)
+// console.log(acumulador)
+
+// acumulador = acumulador + (acumulador * 0.10)
+// console.log(acumulador)
+
+// acumulador = acumulador + (acumulador * 0.10)
+// console.log(acumulador)
+
+// acumulador = acumulador + (acumulador * 0.10)
+// console.log(acumulador) // 2657.3415000000005
+
+let acumuladorDeSueldo = 1500
+
+for (let i = 1; i <= incrementos; i = i + 1) {
+  acumuladorDeSueldo = acumuladorDeSueldo + (acumuladorDeSueldo * 0.10)
+}
+
+console.log(acumuladorDeSueldo.toFixed(2))
+
+
+const salarioInicial = 1500;
+const incrementoAnual = 0.10;
+const añosTrabajo = 6;
+let salarioActual = salarioInicial;
+
+for (let año = 1; año <= añosTrabajo; año++) {
+  salarioActual += salarioActual * incrementoAnual;
+  console.log(`Salario después del año ${año}: $${salarioActual.toFixed(2)}`);
+}
+console.log(`Salario después de ${añosTrabajo} años: $${salarioActual.toFixed(2)}`);
+
+/// 
+
+console.log('>>>>>>>>>>>')
+function incrementoSueldo(sueldo, añosTrabajo){
+  let salarioActual = sueldo;
+  const incrementoAnual = 0.10;
+  for (let año = 1; año <= añosTrabajo; año++) {
+    salarioActual += salarioActual * incrementoAnual;
+    console.log(`Salario después del año ${año}: $${salarioActual.toFixed(2)}`);
+  }
+  console.log(`Salario después de ${añosTrabajo} años: $${salarioActual.toFixed(2)}`);
+  // let y1 = sueldo + (sueldo*0.1);
+  // let y2 = y1 + (y1*0.1);
+  // let y3 = y2 + (y2*0.1);
+  // let y4 = y3 + (y3*0.1);
+  // let y5 = y4 + (y4*0.1);
+  // let y6 = y5 + (y5*0.1);
+  // return "El Primer año gano:" + y1 + ", el segundo año gano:"+ y2 + ",el tercer año gano:"+ y3 + ",el cuarto año gano:" +y4 + ", el quinto año gano: "+ y5.toFixed(2) + ", el sexto año gano: "+ y6.toFixed(2);
+}
+console.log(incrementoSueldo(1500, 3));
