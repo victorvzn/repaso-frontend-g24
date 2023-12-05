@@ -297,7 +297,7 @@ do {
 
 // EJERCICIOS:
 
-// 12.    Un profesor tiene un salario inicial de $1500, y recibe un incremento de 10 % anual durante 6 años. ¿Cuál es su salario al cabo de 6 años? ¿Qué salario ha recibido en cada uno de los 6 años? Realice el algoritmo y representan la solución, utilizando el ciclo apropiado.
+// 01. Un profesor tiene un salario inicial de $1500, y recibe un incremento de 10 % anual durante 6 años. ¿Cuál es su salario al cabo de 6 años? ¿Qué salario ha recibido en cada uno de los 6 años? Realice el algoritmo y representan la solución, utilizando el ciclo apropiado.
 
 const incremento = 0.10
 const incrementos = 6
@@ -320,6 +320,8 @@ const incrementos = 6
 // acumulador = acumulador + (acumulador * 0.10)
 // console.log(acumulador) // 2657.3415000000005
 
+// Respuesta 01
+
 let acumuladorDeSueldo = 1500
 
 for (let i = 1; i <= incrementos; i = i + 1) {
@@ -328,6 +330,7 @@ for (let i = 1; i <= incrementos; i = i + 1) {
 
 console.log(acumuladorDeSueldo.toFixed(2))
 
+// Respuesta 02
 
 const salarioInicial = 1500;
 const incrementoAnual = 0.10;
@@ -340,7 +343,7 @@ for (let año = 1; año <= añosTrabajo; año++) {
 }
 console.log(`Salario después de ${añosTrabajo} años: $${salarioActual.toFixed(2)}`);
 
-/// 
+/// Respuesta 03
 
 console.log('>>>>>>>>>>>')
 function incrementoSueldo(sueldo, añosTrabajo){
@@ -360,3 +363,101 @@ function incrementoSueldo(sueldo, añosTrabajo){
   // return "El Primer año gano:" + y1 + ", el segundo año gano:"+ y2 + ",el tercer año gano:"+ y3 + ",el cuarto año gano:" +y4 + ", el quinto año gano: "+ y5.toFixed(2) + ", el sexto año gano: "+ y6.toFixed(2);
 }
 console.log(incrementoSueldo(1500, 3));
+
+
+// EJERCICIOS PARTE 2
+
+// 1. Determinar si la edad de una persona es mayor de edad o menor de edad mostrando 'Mayor de edad' o 'Menor de edad'
+// 2. Retornar un saludo en tres diferentes lenguajes:
+//    - si es español mostrará 'Hola'
+//    - si es inglés mostrará 'Hello'
+//    - si es aimara mostrará 'kamisaraki'
+// 3. Si un numero es divisible entre 3 y 5 devolver 'fizzbuzz'
+//    Si un numero es divisible entre 3 devolver 'fizz'
+//    Si un numero es divisible entre 5 devolver 'buzz'
+//    De lo contrario devolver el mismo número
+// 4. Retornar true si un numero es primo sino devolver false
+//    Pista: un numero primo es divisible por sí mismo y por 1
+// 5. Devolver un valor que se incremente de dos en dos y devuelva los menores a 10
+
+// FUNCIONES (Sirven para reutilizar código)
+
+// Definiendo una función
+
+function nombreDeLaFuncion() {
+  // Cuerpo de la función y aquí va la lógica a ejecutar
+}
+nombreDeLaFuncion()
+
+// Funciones sin parámetros sin retorno
+
+function imprimirMiNombre() {
+  console.log('Hola soy Victor')
+  console.log('Y soy Frontend')
+}
+
+imprimirMiNombre()
+
+// Funciones con parámetros sin retorno
+
+function imprimirUnNombre(nombre) {
+  console.log('Hola soy ' + nombre)
+}
+
+imprimirUnNombre()
+imprimirUnNombre('Victor')
+
+// EJERCICIOS
+
+// 1. Usando funciones determinar si la edad de una persona es mayor de edad o menor de edad mostrando 'Mayor de edad' o 'Menor de edad'
+
+// Funciones sin retorno de valor
+
+function esMayorOMenorDeEdad(edad) {
+  if (edad >= 18) {
+    console.log('Mayor de edad')
+  } else {
+    console.log('Menor de edad')
+  }
+}
+
+esMayorOMenorDeEdad(37)
+esMayorOMenorDeEdad(7)
+esMayorOMenorDeEdad(3)
+
+// Funciones con retorno de valor
+
+function esMayorOMenorDeEdadConRetorno(edad) {
+  if (edad >= 18) {
+    return 'Mayor de edad'
+  } else {
+    return 'Menor de edad'
+  }
+}
+
+const resultado = esMayorOMenorDeEdadConRetorno(35)
+
+console.log(resultado)
+
+console.log(esMayorOMenorDeEdadConRetorno(15))
+
+//
+
+function esMayorOMenorDeEdadConRetorno2(edad) {
+  let resultado = ''
+  if (edad >= 18) {
+    resultado = 'Mayor de edad'
+  } else {
+    resultado = 'Menor de edad'
+  }
+  return resultado
+}
+
+console.log(esMayorOMenorDeEdadConRetorno2(19))
+
+
+// PROMPT para leer valores del usuario
+
+// const tuEdad = prompt('Ingresa tu edad')
+
+// console.log(tuEdad)
