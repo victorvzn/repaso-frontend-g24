@@ -200,3 +200,98 @@ if (true) {
   // Este bloque se ejecuta solamente si la condición en verdadera(true)
   console.log('¡Me ejecuté!')
 }
+
+const numero = 33
+
+const esPar = numero % 2 === 0
+
+if (esPar) {
+  console.log('Este número es par')
+}
+
+// CONDICIONALES (IF, ELSE)
+
+if (true) {
+  // Verdadero
+} else {
+  // Falso
+}
+
+if (esPar) {
+  console.log('Este número es par')
+} else {
+  console.log('Este número es impar')
+}
+
+// CONDICIONALES (IF, ELSE IF, ELSE)
+
+
+/* 
+if (true) {
+  // Verdadero
+} else if (true) {
+  // Verdarero
+} else if (true) {
+  // Verdarero
+} else {
+  // Se ejecuta si o si
+}
+*/
+
+const heroe = 'Spiderman'
+// const heroe = 'Victor'
+
+if (heroe === 'Batman') {
+  console.log('Hola soy Bruce')
+} else if (heroe === 'Spiderman') {
+  console.log('Hola soy Peter')
+} else if (heroe === 'Ironman') {
+  console.log('Hola soy Tony')
+} else {
+ console.log('No soy un heroe aún') 
+}
+
+// CONDICIONALES (SWITCH)
+
+switch (heroe) {
+  case 'Batman':
+    console.log('Hola soy Bruce')
+    break
+  case 'Spiderman':
+    console.log('Hola soy Peter')
+    break
+  case 'Ironman':
+    console.log('Hola soy Tony')
+    break
+  default:
+    console.log('No soy un heroe aún')
+}
+
+// ESTRUCTURAS REPETITIVAS
+
+// FOR (Sirve para repetir una o varias instrucciones)
+
+for (let i = 0; i < 5; i = i + 1) {
+  console.log(i)
+}
+
+// WHILE
+
+let j = 0
+
+while (j < 10) {
+  console.log(j)
+  // j = j + 1
+  j++
+}
+
+// DO WHILE
+
+let k = 0
+
+do {
+  console.log(k)
+  // k = k + 1
+  k++
+} while (k < 10)
+
