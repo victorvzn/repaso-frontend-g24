@@ -188,3 +188,15 @@ const area = (base * altura) / 2
 
 console.log(area)
 
+// 7. (TODO) Almacenar en una constante un número de 3 cifras y mostrar la suma de sus cifras elevada al cubo.
+
+// 8. (TODO) Almacenar en una constante un monto de dinero, luego mostrar cuanto le toca a cada socio según la siguiente tabla:
+// SOCIO A = 30%, SOCIO B = 20%, SOCIO C = 60%
+
+
+// CONDICIONALES (IF)
+
+if (true) {
+  // Este bloque se ejecuta solamente si la condición en verdadera(true)
+  console.log('¡Me ejecuté!')
+}
