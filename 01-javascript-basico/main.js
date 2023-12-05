@@ -155,10 +155,36 @@ console.log(cadena1.length === cadena2.length)
 
 // 2. Retornar True si un número es menor que 40 sino devolver False
 
+const numero222 = 85
+console.log(numero222 < 40) // false
+
 // 3. Retornar True si un número es menor que 60 sino devolver False
+
+const numero333 = 86
+console.log(numero333 < 60) // false
 
 // 4. Retornar True si un numero es par sino devolver False
 
+const numero444 = 5
+const numero555 = 6
+
+console.log(numero444 % 2 === 0) // false
+console.log(numero555 % 2 === 0) // true
+
 // 5. Retornar True si un numero es impar sino devolver False
 
+const numero666 = 5
+const numero777 = 6
+
+console.log(numero666 % 2 !== 0) // true
+console.log(numero777 % 2 !== 0) // false
+
 // 6. calcular el area de un triangulo y mostrar su resultado si tenemos los valores base y altura
+
+const base = 10
+const altura = 5
+
+const area = (base * altura) / 2
+
+console.log(area)
+
