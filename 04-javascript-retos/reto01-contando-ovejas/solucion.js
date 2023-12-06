@@ -17,3 +17,4 @@ export default function contarOvejas(ovejas) {
 }
 
 // AND -> &&
+// OR -> ||
