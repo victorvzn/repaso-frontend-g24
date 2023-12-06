@@ -1,6 +1,6 @@
 // console.log('Hola JS!')
 
-let numeroActual = '0'
+let numeroActual = 0
 let operador = ''
 let operando = ''
 
