@@ -2,6 +2,10 @@
 //   console.log('Hola a todos!')
 // }
 
+// EXPORTACION NOMBRADA
+
+export const PI = 3.1415
+
 export function suma(a, b) {
   return a + b
 }
