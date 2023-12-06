@@ -1,7 +1,5 @@
 /*
-Para mejorar la productividad de la tienda en la que trabajamos, vamos a crear una pequeña máquina que 
-"calcula el mínimo número de monedas que debemos usar para dar el cambio de una compra"
-en metálico.
+Para mejorar la productividad de la tienda en la que trabajamos, vamos a crear una pequeña máquina que "calcula el mínimo número de monedas que debemos usar para dar el cambio de una compra" en metálico.
 
 Las monedas para cambio que puedes usar son estas:
 
@@ -16,6 +14,16 @@ Tenemos que crear una función que recibe el número de céntimos que hay que de
 */
 
 export default function getCoins(change) {
-  //
-  return {}
+  const coins = [1, 2, 5, 10, 20, 50]
+  let acc = change
+  return coins
+    .reverse()
+    .map(function (coin) {
+      const quotient = Math.floor(acc / coin)
+      if (quotient > 0) {
+        acc = acc % coin
+      }
+      return quotient
+    })
+    .reverse()
 }
