@@ -1,6 +1,6 @@
 console.log('Hola JS')
 
-// Arrays
+// ARRAYS
 
 const numero = 399
 const cadena = 'Victor'
@@ -83,3 +83,84 @@ console.log(
     return language.toLowerCase().includes('c') // ['javascript', 'C', 'c++']
   })
 )
+
+
+// OBJETOS
+
+/*
+  {
+    KEY: VALUE,
+    KEY: VALUE,
+    OTRA_KEY: OTRO_VALUE
+  }
+*/
+
+// El value, puede ser cualquier tipo de dato primitivo o complejo como number, string, boolean, arrays, objetos, functions, etc
+
+const miObjetoVacio = {}
+
+const miObjeto = {
+  nombre: 'Victor',
+  apellido: 'Villazón',
+  esMayorDeEdad: true,
+  colorFavorito: 'Azúl',
+  'mi edad': 37,
+  coloresFavoritos: ['verde', 'rojo', 'azúl'],
+  cursos: [
+    {
+      nombre: 'Matemática',
+      nota: 18
+    },
+    {
+      nombre: 'Algoritmos',
+      nota: 20
+    }
+  ]
+}
+
+console.log(miObjeto)
+
+// LEER LOS CAMPOS DE UN OBJETO
+
+console.log(miObjeto.nombre) // Victor
+console.log(miObjeto.apellido) // Villazón
+console.log(miObjeto.edad) // undefined
+
+// console.log(miObjeto.mi edad) // BAD ❌🙈
+console.log(miObjeto['mi edad']) // OK ✅🤩
+console.log(miObjeto['colorFavorito']) // Azúl
+
+console.log(miObjeto.coloresFavoritos)
+console.log(miObjeto.coloresFavoritos[1])
+
+console.log(miObjeto.cursos)
+console.log(miObjeto.cursos[1])
+console.log(miObjeto.cursos[1].nombre)
+console.log(miObjeto.cursos[1]['nota'])
+
+// ELIMINAR PROPIEDADES DE UN OBJETO
+
+console.log(miObjeto)
+delete miObjeto.colorFavorito
+console.log(miObjeto)
+
+// INSERTAR UNA NUEVA PROPIEDAD A UN OBJETO
+
+miObjeto.platoFavorito = 'Ceviche de Conchas Negras'
+miObjeto['juegos favoritos'] = ['Crash Team Reacing', 'Mario', 'Minecraft']
+
+console.log(miObjeto)
+
+// ACTUALIZAR UNA PROPIEDAD DEL OBJETO
+
+miObjeto.platoFavorito = 'Arroz con mariscos'
+
+console.log(miObjeto)
+
+// OTROS MÉTODOS DE OBJETOS
+
+console.log(Object.keys(miObjeto)) // Obtenemos solo las claves(keys) del objeto
+console.log(Object.values(miObjeto)) // Obtenemos solo los valores(values) del objeto
+console.log(Object.entries(miObjeto)) // Convertimos un objeto en arreglo
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
